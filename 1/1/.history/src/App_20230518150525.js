@@ -1,0 +1,54 @@
+let Header = (props) => {
+  return (
+    <h1>{props.course}</h1>
+  )
+}
+
+let Content = () => {
+  return (
+    <>
+      <ul>
+        <li>
+          {part1} {exercises1}
+        </li>
+        <li>
+          {part2} {exercises2}
+
+        </li>
+        <li>
+          {part3} {exercises3}
+        </li>
+      </ul>
+    </>
+  )
+}
+
+let Total = () => {
+  return (
+    <>
+
+    </>
+  )
+}
+
+
+const App = () => {
+  // const-definitions
+
+  let course = "Half Stack application development" 
+  const part1 = "Fundamentals of React"
+  const exercises1 = 10
+  const part2 = "Using props to pass data"
+  const exercises2 = 7
+  const part3 = "State of a component"
+
+  return (
+    <div>
+      <Header course={course} />
+      <Content />
+      <Total />
+    </div>
+  )
+}
+
+export default App
